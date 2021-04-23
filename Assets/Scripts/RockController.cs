@@ -19,13 +19,13 @@ public class RockController : MonoBehaviour
         transform.Rotate(0, 0, rotSpeed );
 
         if (GetComponent<Renderer>().isVisible) {
-			// １回表示されたあと
-			showFlag = true;
-		} else {
-			if (showFlag) {
-				// 画面の外に出て消えたら、削除する
-				Destroy(this.gameObject);
-			}
-		}
+            // １回表示されたあと
+            showFlag = true;
+        } else {
+            if (showFlag) {
+                // 画面の外に出て消えたら、削除する
+                Destroy(this.gameObject);
+            }
+        }
     }
 }
