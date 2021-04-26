@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5807470823275283821}
   - component: {fileID: 5807470823275283822}
   - component: {fileID: -2221011468854849251}
+  - component: {fileID: 7431364187059584549}
+  - component: {fileID: 6854350238320424310}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -112,3 +114,30 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.01020968}
   serializedVersion: 2
   m_Radius: 0.45062444
+--- !u!114 &7431364187059584549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807470823275283823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d5477547cdbb4d5d9f68aa841d16db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6854350238320424310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807470823275283823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3836143c9174d1a9a6ba8022647fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: rocket
+  explosionPrefab: {fileID: 100000, guid: 4c5a17ca1f9fec84e941441ebb8be079, type: 3}
+  sceneName: GameOverScene

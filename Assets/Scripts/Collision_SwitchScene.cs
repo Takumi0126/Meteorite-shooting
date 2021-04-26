@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class CollisionDetection : MonoBehaviour
+public class Collision_SwitchScene : MonoBehaviour
 {
+    public string targetObject; 
     public GameObject explosionPrefab;
-    public string targetObject;
 
-
-    void OnTriggerEnter2D(Collider2D coll) {
+    void OnCollisionEnter2D(Collision2D coll)  { 
         if (coll.gameObject.name == targetObject) {
-            GameObject.Find ("Score").GetComponent<ScoreController> ().AddScore ();
             GameObject effect = Instantiate (explosionPrefab, transform.position, Quaternion.identity) as GameObject;
             Destroy (effect, 1.0f);
             Destroy(coll.gameObject);
